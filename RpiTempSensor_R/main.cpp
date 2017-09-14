@@ -8,8 +8,8 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	
-	TempSensorDS18B20_R tempSensor("1");
-	TempSensorDS18B20_R tempSensor_2("2");
+	TempSensorDS18B20_R tempSensor("changeMe");
+	TempSensorDS18B20_R tempSensor_2("changeMe");
 	
 	TempSensorCollection_R *pTempSensorObj = new TempSensorCollection_R();
 	pTempSensorObj->AddSensor(&tempSensor);
