@@ -1,6 +1,6 @@
 #include <iostream>
-#include "TempSensorDS18B20_R\TempSensorDS18B20_R.h"
-#include "TempSensorDS18B20_R\TempSensorCollection_R.h"
+#include "TempSensorDS18B20_R/TempSensorDS18B20_R.h"
+#include "TempSensorDS18B20_R/TempSensorCollection_R.h"
 
 using namespace std;
 
@@ -8,8 +8,8 @@ using namespace std;
 
 int main(int argc, char** argv) {
 	
-	TempSensorDS18B20_R tempSensor("changeMe");
-	TempSensorDS18B20_R tempSensor_2("changeMe");
+	TempSensorDS18B20_R tempSensor("28-000005cafed4");
+	TempSensorDS18B20_R tempSensor_2("28-0000062a8425");
 	
 	TempSensorCollection_R *pTempSensorObj = new TempSensorCollection_R();
 	pTempSensorObj->AddSensor(&tempSensor);
